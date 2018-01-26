@@ -1,25 +1,85 @@
-/* app css stylesheet */
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template: auto / repeat(12, 1fr);
+  grid-template-areas: "menu menu main main main main main main main main main main";
+  height: 100vh;
+}
+
+/* Menu */
 
 .menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+  grid-area: menu;
+  background-color: #191414;
 }
 
-.menu:before {
-  content: "[";
+.nav {}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.menu:after {
-  content: "]";
+.nav ul li a {
+  color: #505F6D;
 }
 
-.menu>li {
-  display: inline;
+.header {
+  background-color: #E5E9ED;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
 }
 
-.menu>li+li:before {
-  content: "|";
-  padding-right: 0.3em;
+/* Search */
+
+.search-box {
+  width: 80%;
+}
+
+.search-box .search {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  height: 36px;
+  width: 100%;
+}
+
+/* User */
+
+.user-box {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.user-box .user {
+  display: flex;
+  flex-direction: column;
+  color: #192028;
+}
+
+.user .name {
+  font-size: 20px;
+}
+
+.user .company {
+  font-size: 16px;
+}
+
+/* Main */
+
+
+.main {
+  grid-area: main;
+  background-color: #fff;
 }
