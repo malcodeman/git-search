@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title>Shiff Admin</title>
   <link rel="stylesheet" href="app.css" />
- 
+
 </head>
 
 <body>
@@ -15,48 +15,46 @@
         <h1 class="logo">SHIFF</h1>
       </div>
       <nav class="nav">
-        <ul class="list">
-          <li>
-            <a href="#!/view1">
-              <i class="icon icon-home"></i>
-              <span>Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="#!/view2">
-              <i class="icon icon-campaigns"></i>
-              <span>Campaigns</span>
-            </a>
-          </li>
-          <li>
-            <a href="#!/view3">
-              <i class="icon icon-products"></i>
-              <span>Products</span>
-            </a>
-          </li>
-          <li>
-            <a href="#!/view4">
-              <i class="icon icon-orders"></i>
-              <span>Orders</span>
-            </a>
-          </li>
-          <li>
-            <a href="#!/view5">
-              <i class="icon icon-reports"></i>
-              <span>Reports</span>
-            </a>
-          </li>
-        </ul>
+        <div class="item">
+          <a href="#!/view1">
+            <i class="icon icon-home"></i>
+            <span>Home</span>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!/view2">
+            <i class="icon icon-campaigns"></i>
+            <span>Campaigns</span>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!/view3">
+            <i class="icon icon-products"></i>
+            <span>Products</span>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!/view4">
+            <i class="icon icon-orders"></i>
+            <span>Orders</span>
+          </a>
+          <div class="notification">
+            <span class="counter">12</span>
+          </div>
+        </div>
+        <div class="item">
+          <a href="#!/view5">
+            <i class="icon icon-reports"></i>
+            <span>Reports</span>
+          </a>
+        </div>
       </nav>
       <div class="brands-box">
-        <ul class="list">
-          <li>
-            <a href="#">
-              <i></i>
-              <span>Playstation</span>
-            </a>
-          </li>
-        </ul>
+        <div class="item">
+          <a href="#">
+            <span>Playstation</span>
+          </a>
+        </div>
       </div>
     </aside>
     <main class="main">
@@ -79,14 +77,14 @@
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
-  
+
   <script src="app.js"></script>
 
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="view3/view3.js"></script>
   <script src="view4/view4.js"></script>
-  <script src="view5/view5.js"></script>  
+  <script src="view5/view5.js"></script>
 
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>

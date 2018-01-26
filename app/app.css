@@ -69,7 +69,12 @@ a {
 .menu .notification {
   margin-left: auto;
   background-color: #4c89fe;
-  border-radius: 50%;
+  border-radius: 12px;
+  width: 25px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu .notification .counter {
@@ -88,8 +93,21 @@ a {
   color: #fffefe;
 }
 
+/* Navigation */
+
 .nav {
   margin-bottom: 2rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.item a {
+  color: #505F6D;
+  font-size: 14px;
+  padding: 8px 8px 8px 0;
 }
 
 /* Header */
