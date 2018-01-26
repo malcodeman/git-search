@@ -1,5 +1,6 @@
 body,
-h1 {
+h1,
+p {
   margin: 0;
 }
 
@@ -33,6 +34,8 @@ a {
   font-size: 14px;
 }
 
+/* Icons */
+
 .menu .icon {
   width: 20px;
   height: 20px;
@@ -43,24 +46,35 @@ a {
   background-position: center;
 }
 
-.menu .ic-home {
+.menu .icon-home {
   background-image: url("assets/icons/menu-home-icon.png");
 }
 
-.menu .ic-campaigns {
+.menu .icon-campaigns {
   background-image: url("assets/icons/menu-campaigns-icon.png");
 }
 
-.menu .ic-products {
+.menu .icon-products {
   background-image: url("assets/icons/menu-products-icon.png");
 }
 
-.menu .ic-orders {
+.menu .icon-orders {
   background-image: url("assets/icons/menu-orders-icon.png");
 }
 
-.menu .ic-reports {
+.menu .icon-reports {
   background-image: url("assets/icons/menu-reports-icon.png");
+}
+
+.menu .notification {
+  margin-left: auto;
+  background-color: #4c89fe;
+  border-radius: 50%;
+}
+
+.menu .notification .counter {
+  font-size: 11px;
+  color: #fff;
 }
 
 /* Logo */
@@ -77,6 +91,8 @@ a {
 .nav {
   margin-bottom: 2rem;
 }
+
+/* Header */
 
 .header {
   background-color: #E5E9ED;
