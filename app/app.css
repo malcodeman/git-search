@@ -33,6 +33,36 @@ a {
   font-size: 14px;
 }
 
+.menu .icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  margin-right: 1rem;
+  background-position: center;
+}
+
+.menu .ic-home {
+  background-image: url("assets/icons/menu-home-icon.png");
+}
+
+.menu .ic-campaigns {
+  background-image: url("assets/icons/menu-campaigns-icon.png");
+}
+
+.menu .ic-products {
+  background-image: url("assets/icons/menu-products-icon.png");
+}
+
+.menu .ic-orders {
+  background-image: url("assets/icons/menu-orders-icon.png");
+}
+
+.menu .ic-reports {
+  background-image: url("assets/icons/menu-reports-icon.png");
+}
+
 /* Logo */
 
 .menu .logo-box {
@@ -53,7 +83,7 @@ a {
   height: 56px;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 /* Search */
@@ -76,6 +106,14 @@ a {
   width: 20%;
   display: flex;
   justify-content: center;
+}
+
+.user-box .avatar {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 6px;
 }
 
 .user-box .user {
