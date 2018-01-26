@@ -1,4 +1,5 @@
-body {
+body,
+h1 {
   margin: 0;
 }
 
@@ -18,18 +19,33 @@ a {
 .menu {
   grid-area: menu;
   background-color: #191414;
+  padding: 1rem;
 }
 
-.nav {}
-
-.nav ul {
+.menu .list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.nav ul li a {
+.menu ul li a {
   color: #505F6D;
+  font-size: 14px;
+}
+
+/* Logo */
+
+.menu .logo-box {
+  margin-bottom: 2rem;
+}
+
+.logo-box .logo {
+  font-size: 32px;
+  color: #fffefe;
+}
+
+.nav {
+  margin-bottom: 2rem;
 }
 
 .header {
@@ -69,15 +85,14 @@ a {
 }
 
 .user .name {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .user .company {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 /* Main */
-
 
 .main {
   grid-area: main;
