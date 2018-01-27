@@ -27,7 +27,16 @@ a {
 .menu {
   grid-area: menu;
   background-color: #191414;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 991px) {
+  .menu {
+    display: block;
+    padding: 0 1rem;
+  }
 }
 
 /* Icons */
@@ -38,8 +47,13 @@ a {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: 20px;
-  margin-right: 1rem;
   background-position: center;
+}
+
+@media (min-width: 991px) {
+  .menu .icon {
+    margin-right: 1rem;
+  }
 }
 
 .menu .icon-home {
@@ -88,6 +102,9 @@ a {
 
 .menu .logo-box {
   margin-bottom: 2rem;
+  height: 56px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .logo-box .logo {
@@ -119,7 +136,13 @@ a {
 .item a {
   color: #505F6D;
   font-size: 14px;
-  padding: 8px 8px 8px 0;
+  padding: 8px 8px;
+}
+
+@media (min-width: 991px) {
+  .item a {
+    padding: 8px 8px 8px 0;
+  }
 }
 
 .item a span {
@@ -139,13 +162,13 @@ a {
   height: 56px;
   display: flex;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 /* Search */
 
 .search-box {
-  width: 50%;
+  width: 80%;
 }
 
 @media (min-width: 767px) {
@@ -165,9 +188,15 @@ a {
 /* User */
 
 .user-box {
-  width: 50%;
+  width: 20%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+}
+
+@media (min-width: 576px) {
+  .user-box {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 767px) {
@@ -181,7 +210,12 @@ a {
   width: 32px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 6px;
+}
+
+@media (min-width: 767px) {
+  .user-box .avatar {
+    margin-right: 6px;
+  }
 }
 
 .user-box .user {
@@ -195,7 +229,7 @@ a {
   display: none;
 }
 
-@media (min-width: 575px) {
+@media (min-width: 767px) {
   .user .name {
     display: inline
   }
@@ -206,7 +240,7 @@ a {
   display: none;
 }
 
-@media (min-width: 575px) {
+@media (min-width: 767px) {
   .user .company {
     display: inline
   }
