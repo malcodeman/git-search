@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "San Francisco";
+  src: url("assets/fonts/SanFranciscoDisplay-Medium.otf") format("otf");
+}
+
+body {
+  font-family: "San Francisco", sans-serif;
+}
+
 body,
 h1,
 p {
@@ -8,24 +17,24 @@ a {
   text-decoration: none;
 }
 
-.grid {
+.app-grid {
   display: grid;
   height: 100vh;
   grid-template: auto / 48px repeat(11, 1fr);
-  grid-template-areas: "menu main main main main main main main main main main main";
+  grid-template-areas: "app-menu main main main main main main main main main main main";
 }
 
 @media (min-width: 991px) {
-  .grid {
+  .app-grid {
     grid-template: auto / repeat(12, 1fr);
-    grid-template-areas: "menu menu main main main main main main main main main main";
+    grid-template-areas: "app-menu app-menu main main main main main main main main main main";
   }
 }
 
-/* Menu */
+/* app-menu */
 
-.menu {
-  grid-area: menu;
+.app-menu {
+  grid-area: app-menu;
   background-color: #191414;
   display: flex;
   flex-direction: column;
@@ -33,7 +42,7 @@ a {
 }
 
 @media (min-width: 991px) {
-  .menu {
+  .app-menu {
     display: block;
     padding: 0 1rem;
   }
@@ -41,7 +50,7 @@ a {
 
 /* Icons */
 
-.menu .icon {
+.app-menu .icon {
   width: 20px;
   height: 20px;
   display: inline-block;
@@ -51,32 +60,32 @@ a {
 }
 
 @media (min-width: 991px) {
-  .menu .icon {
+  .app-app-menu .icon {
     margin-right: 1rem;
   }
 }
 
-.menu .icon-home {
+.app-menu .icon-home {
   background-image: url("assets/icons/menu-home-icon.png");
 }
 
-.menu .icon-campaigns {
+.app-menu .icon-campaigns {
   background-image: url("assets/icons/menu-campaigns-icon.png");
 }
 
-.menu .icon-products {
+.app-menu .icon-products {
   background-image: url("assets/icons/menu-products-icon.png");
 }
 
-.menu .icon-orders {
+.app-menu .icon-orders {
   background-image: url("assets/icons/menu-orders-icon.png");
 }
 
-.menu .icon-reports {
+.app-menu .icon-reports {
   background-image: url("assets/icons/menu-reports-icon.png");
 }
 
-.menu .notification {
+.app-menu .notification {
   margin-left: auto;
   background-color: #4c89fe;
   border-radius: 12px;
@@ -88,19 +97,19 @@ a {
 }
 
 @media (min-width: 991px) {
-  .menu .notification {
+  .app-menu .notification {
     display: flex
   }
 }
 
-.menu .notification .counter {
+.app-menu .notification .counter {
   font-size: 11px;
   color: #fff;
 }
 
 /* Logo */
 
-.menu .logo-box {
+.app-menu .logo-box {
   margin-bottom: 2rem;
   height: 56px;
   display: flex;
@@ -155,9 +164,18 @@ a {
   }
 }
 
+/* Main */
+
+.app-main {
+  grid-area: main;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Header */
 
-.header {
+.app-main .app-header {
   background-color: #E5E9ED;
   height: 56px;
   display: flex;
@@ -190,13 +208,7 @@ a {
 .user-box {
   width: 20%;
   display: flex;
-  justify-content: flex-end;
-}
-
-@media (min-width: 576px) {
-  .user-box {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 @media (min-width: 767px) {
@@ -246,9 +258,9 @@ a {
   }
 }
 
-/* Main */
-
-.main {
-  grid-area: main;
-  background-color: #fff;
+.app-content-container {
+  flex-grow: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }

@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <div class="grid">
-    <aside class="menu">
+  <div class="app-grid">
+    <aside class="app-menu">
       <div class="logo-box">
         <h1 class="logo"></h1>
       </div>
@@ -57,8 +57,8 @@
         </div>
       </div>
     </aside>
-    <main class="main">
-      <header class="header">
+    <main class="app-main">
+      <header class="app-header">
         <div class="search-box">
           <input class="search" type="search" placeholder="Search" />
         </div>
@@ -69,9 +69,8 @@
             <span class="company">Sony Inc.</span>
           </div>
         </div>
-
       </header>
-      <div ng-view></div>
+      <div ng-view class="app-content-container"></div>
     </main>
   </div>
 
