@@ -1,13 +1,6 @@
-.app-menu .icon-products {
-    background-image: url("../../assets/icons/menu-products-selected-icon.png");
-}
-
-.item .products {
-    color: #fffefe;
-}
 /* Header */
 
-.header {
+header-directive {
     border-bottom: 1px solid #dfe3e8;
     display: flex;
     padding-bottom: 2rem;
@@ -40,10 +33,4 @@
 .header-text-box p {
     color: #202b36;
     font-size: 28.0px;
-}
-
-/* Main */
-
-.main {
-    flex-grow: 1;
 }

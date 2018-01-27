@@ -6,7 +6,6 @@ angular.module('shiffAdmin', [
   'myApp.products',
   'myApp.orders',
   'myApp.reports',  
-  'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
