@@ -3,7 +3,7 @@
   src: url("assets/fonts/SanFranciscoDisplay-Medium.otf") format("otf");
 }
 
-body {
+body, input, textarea {
   font-family: "San Francisco", sans-serif;
 }
 
@@ -263,4 +263,16 @@ a {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+}
+
+.btn {
+  background-color: #ffaa01;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #192028;
+  font-size: 1rem;
+  border-radius: 2px;
+  padding: 0 1rem;
 }

@@ -23,5 +23,10 @@
         "paragraph1": "Sony Inc.",
         "paragraph2": "Campaigns",
         "icon": "../../assets/icons/header/header-campaigns-icon.png"
+    },
+    "new-campaign": {
+        "paragraph1": "New Campaign",
+        "paragraph2": "Sony",
+        "icon": "../../assets/icons/header/header-home-icon.png"
     }
 }

@@ -5,11 +5,11 @@ angular.module('shiffAdmin', [
   'myApp.campaigns',
   'myApp.products',
   'myApp.orders',
-  'myApp.reports',  
+  'myApp.reports',
+  'myApp.new-campaign'
 ]).
 config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
-
   $routeProvider.otherwise({
     redirectTo: '/home'
   });

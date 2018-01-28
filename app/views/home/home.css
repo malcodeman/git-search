@@ -45,15 +45,3 @@
     font-size: 20px;
     margin-bottom: 2rem;
 }
-
-.main-text-box .btn {
-    background-color: #ffaa01;
-    height: 43px;
-    max-width: 182px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #192028;
-    font-size: 1rem;
-    border-radius: 2px;
-}
