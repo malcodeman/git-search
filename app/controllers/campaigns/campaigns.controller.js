@@ -1,8 +1,8 @@
 angular.module("shiffAdmin").controller("campaignsController", ["$scope", "headerInfo", function ($scope, headerInfo) {
-    let getHeaderInfo = () => {
-        headerInfo.getHeaderInfo().then((res) => {
-            $scope.page = res.campaigns;
+    let getHeaderInfo = (page) => {
+        headerInfo.getHeaderInfo(page).then((res) => {
+            $scope.page = res;
         })
     }
-    getHeaderInfo();
+    getHeaderInfo("campaigns");
 }])

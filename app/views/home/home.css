@@ -6,43 +6,6 @@
     color: #fffefe;
 }
 
-/* Header */
-
-.header {
-    border-bottom: 1px solid #dfe3e8;
-    display: flex;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-}
-
-.company-logo {
-    height: 48px;
-    width: 48px;
-    margin: 0 1rem;
-    display: none;
-}
-
-@media (min-width: 767px) {
-    .company-logo {
-        display: block;
-    }
-}
-
-.header-text-box {
-    display: flex;
-    flex-direction: column;
-}
-
-.header-text-box .company-name {
-    color: #202b36;
-    font-size: 14px;
-}
-
-.header-text-box p {
-    color: #202b36;
-    font-size: 28.0px;
-}
-
 /* Main */
 
 .main {
