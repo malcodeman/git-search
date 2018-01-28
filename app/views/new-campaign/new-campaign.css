@@ -3,24 +3,12 @@
     flex-direction: column;
 }
 
-.product-description {
-    padding: 0 1rem;
-    width: 20%;
-}
-
-.product-input {
-    padding: 0 1rem;
-    width: 80%;
-}
-
-.add-image-box {
-    align-items: center;
-}
+/* Sections */
 
 section {
     border-bottom: 1px solid #dfe3e8;
     padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 
 section:last-of-type {
@@ -29,45 +17,106 @@ section:last-of-type {
     padding-bottom: 0;
 }
 
-.product-description p:nth-child(1) {
-    color: #202b36;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-.product-description p:nth-child(2) {
-    color: #627380;
-    font-size: 14px;
-    margin-bottom: 1rem;
-}
-
-.product-description a {
-    color: #4c89fe;
-    font-size: 14px;    
-}
-
-.product-input p {
-    font-size: 14px;
-}
-
-.product-input a {
-    font-size: 14px;
-}
-
-
-label {
-    color: #202b36;
-    font-size: 14px;
-}
-
 .row {
     display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 767px) {
+    .row {
+        flex-direction: row;
+    }
 }
 
 .col {
     display: flex;
     flex-direction: column;
 }
+
+/* Description box */
+
+.description-box {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 767px) {
+    .description-box {
+        padding: 0 1rem;
+        width: 20%;
+        margin-bottom: 0;
+    }
+}
+
+.description-box p {
+    line-height: 1.4;
+}
+
+@media (min-width: 767px) {
+    .description-box p {
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+}
+
+.description-box p:nth-child(1) {
+    color: #202b36;
+    font-size: 1rem;
+}
+
+.description-box p:nth-child(2) {
+    color: #627380;
+    font-size: 14px;
+}
+
+.description-box a {
+    color: #4c89fe;
+    font-size: 14px;
+}
+
+/* Input box */
+
+.input-box {
+    width: 100%;
+}
+
+@media (min-width: 767px) {
+    .input-box {
+        width: 80%;
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 767px) {
+    .input-box p {
+        margin-bottom: 1rem;
+    }
+}
+
+.add-image-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.add-image-box p {
+    margin-bottom: 0;
+}
+
+.input-box p {
+    font-size: 14px;
+}
+
+.input-box a {
+    font-size: 14px;
+}
+
+label {
+    color: #202b36;
+    font-size: 14px;
+}
+
+/* Inputs */
 
 .input {
     width: 100%;
@@ -77,6 +126,7 @@ label {
     box-sizing: border-box;
     font-size: 14px;
     border-radius: 2px;
+    margin-bottom: 1rem;
 }
 
 .input-range {
@@ -84,19 +134,32 @@ label {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    margin-bottom: 1rem;
 }
 
 .input-text-area {
     border: 1px solid #dee3e8;
     height: 80px;
-    padding: 8px 8px;
     box-sizing: border-box;
     font-size: 14px;
     resize: none;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 767px) {
+    .input-text-area {
+        padding: 8px 8px;
+    }
 }
 
 .width50 {
-    width: 50%;
+    width: 100%;
+}
+
+@media (min-width: 767px) {
+    .width50 {
+        width: 50%;
+    }
 }
 
 .width100 {
@@ -109,8 +172,4 @@ label {
 
 .mr-1 {
     margin-right: 1rem;
-}
-
-.mb-1 {
-    margin-bottom: 1rem;
 }
