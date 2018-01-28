@@ -1,0 +1,22 @@
+{
+    "reports": {
+        "paragraph1": "Sony Inc.",
+        "paragraph2": "Reports",
+        "icon": "../../assets/icons/header/header-reports-icon.png"
+    },
+    "products": {
+        "paragraph1": "Sony Inc.",
+        "paragraph2": "Products",
+        "icon": "../../assets/icons/header/header-products-icon.png"
+    },
+    "orders": {
+        "paragraph1": "Sony Inc.",
+        "paragraph2": "Orders",
+        "icon": "../../assets/icons/header/header-orders-icon.png"
+    },
+    "campaigns": {
+        "paragraph1": "Sony Inc.",
+        "paragraph2": "Campaigns",
+        "icon": "../../assets/icons/header/header-campaigns-icon.png"
+    }
+}

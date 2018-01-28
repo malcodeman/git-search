@@ -1,6 +1,8 @@
-angular.module("shiffAdmin").controller("ordersController", ["$scope", function ($scope) {
-    $scope.page = {
-        "paragraph1": "Sony Inc.",
-        "paragraph2": "Orders"
+angular.module("shiffAdmin").controller("ordersController", ["$scope", "headerInfo", function ($scope, headerInfo) {
+    let getHeaderInfo = () => {
+        headerInfo.getHeaderInfo().then((res) => {
+            $scope.page = res.orders;
+        })
     }
+    getHeaderInfo();
 }])
