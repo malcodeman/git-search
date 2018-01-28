@@ -5,10 +5,6 @@ angular.module('myApp.orders', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/orders', {
     templateUrl: 'views/orders/orders.html',
-    controller: 'OrdersCtrl'
+    controller: 'ordersController'
   });
 }])
-
-.controller('OrdersCtrl', [function() {
-
-}]);

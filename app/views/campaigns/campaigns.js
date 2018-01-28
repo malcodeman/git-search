@@ -5,10 +5,6 @@ angular.module('myApp.campaigns', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/campaigns', {
     templateUrl: 'views/campaigns/campaigns.html',
-    controller: 'CampaignsCtrl'
+    controller: 'campaignsController'
   });
 }])
-
-.controller('CampaignsCtrl', [function() {
-
-}]);

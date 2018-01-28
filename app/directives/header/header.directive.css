@@ -23,14 +23,13 @@ header-directive {
 .header-text-box {
     display: flex;
     flex-direction: column;
+    color: #202b36;
 }
 
-.header-text-box .company-name {
-    color: #202b36;
+.header-text-box p:nth-child(1) {
     font-size: 14px;
 }
 
-.header-text-box p {
-    color: #202b36;
+.header-text-box p:nth-child(2) {
     font-size: 28.0px;
 }

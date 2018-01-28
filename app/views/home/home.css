@@ -47,12 +47,17 @@
 
 .main {
     flex-grow: 1;
-    background-image: url("../../assets/desktop.jpg");
-    background-position: 80% 50%;
-    background-repeat: no-repeat;
-    background-size: 30%;
     display: flex;
     align-items: center;
+}
+
+@media (min-width: 991px) {
+    .main {
+        background-image: url("../../assets/desktop.jpg");
+        background-position: 80% 50%;
+        background-repeat: no-repeat;
+        background-size: 30%;
+    }
 }
 
 .main-text-box {
@@ -81,7 +86,7 @@
 .main-text-box .btn {
     background-color: #ffaa01;
     height: 43px;
-    width: 182px;
+    max-width: 182px;
     display: flex;
     justify-content: center;
     align-items: center;
