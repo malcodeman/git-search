@@ -1,0 +1,18 @@
+{
+    "campaigns": [{
+            "image": "../../assets/products/playstation4.png",
+            "name": "Playstation 4 Game Console",
+            "info": "234 orders, 14 days of campaign left"
+        },
+        {
+            "image": "../../assets/products/playstation2.png",
+            "name": "Playstation 2",
+            "info": "167 orders, 9 days of campaign left"
+        },
+        {
+            "image": "../assets/products/playstation_portable.png",
+            "name": "Playstation 4 Portable",
+            "info": "131 orders, 11 days of campaign left"
+        }
+    ]
+}

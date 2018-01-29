@@ -5,3 +5,30 @@
 .item .campaigns {
     color: #fffefe;
 }
+
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+section p {
+    color: #202b36;
+}
+
+section .main-text {
+    margin-bottom: 2rem;
+}
+
+section p:nth-child(1) {
+    font-size: 1rem;
+}
+
+section p:nth-child(1) {
+    color: #202b36;
+    font-size: 14px;
+}
+
+.products-box {
+    display: flex;
+    flex-direction: column;
+}
