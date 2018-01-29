@@ -2,7 +2,7 @@
     background-image: url("../../assets/icons/menu-campaigns-selected-icon.png");
 }
 
-.item .campaigns {
+.item .menu-campaigns {
     color: #fffefe;
 }
 
@@ -15,10 +15,6 @@ section p {
     color: #202b36;
 }
 
-section .main-text {
-    margin-bottom: 2rem;
-}
-
 section p:nth-child(1) {
     font-size: 1rem;
 }
@@ -28,7 +24,6 @@ section p:nth-child(1) {
     font-size: 14px;
 }
 
-.products-box {
-    display: flex;
-    flex-direction: column;
+.campaigns-container {
+    padding: 2rem 2rem;
 }

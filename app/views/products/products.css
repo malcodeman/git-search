@@ -2,9 +2,10 @@
     background-image: url("../../assets/icons/menu-products-selected-icon.png");
 }
 
-.item .products {
+.item .menu-products {
     color: #fffefe;
 }
+
 /* Header */
 
 .header {
@@ -44,6 +45,11 @@
 
 /* Main */
 
-.main {
-    flex-grow: 1;
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.products-container {
+    padding: 2rem 2rem;
 }
