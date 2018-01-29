@@ -3,9 +3,14 @@
 <main class="main">
     <section>
         <notification-directive notification="notification"></notification-directive>
-        <p>Active Campaigns</p>
         <div class="campaigns-container">
-            <campaign-directive campaign="campaign" ng-repeat="campaign in campaigns"></campaign-directive>
+            <div class="campaigns-container-text">
+                <p>Active Campaigns</p>
+                <p>Product</p>
+            </div>
+            <div class="products-box">
+                <campaign-directive campaign="campaign" ng-repeat="campaign in campaigns"></campaign-directive>
+            </div>
         </div>
     </section>
 </main>

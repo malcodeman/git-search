@@ -1,13 +1,21 @@
 .product {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    padding: 8px 1rem;
+    border-bottom: 1px solid #dee3e8;
+}
+
+@media (min-width: 576px) {
+    .product {
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 @media (min-width: 767px) {
     .product {
         flex-direction: row;
-        align-items: center;
+
     }
 }
 
@@ -16,9 +24,13 @@
     flex-direction: column;
 }
 
+.product-box .product-name {
+    font-weight: bold;
+}
+
 .product img {
-    height: 48px;
-    width: 48px;
+    height: 64px;
+    width: 64px;
     margin-right: 1rem;
     background-color: #ebedf0;
     padding: 8px;
@@ -40,7 +52,6 @@
 }
 
 .product .edit-btn {
-    margin-left: auto;
     color: #202b36;
     font-size: 14px;
     border: 1px solid #c3ccd5;
@@ -49,6 +60,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 58px;
+    width: 100%;
     cursor: pointer;
+}
+
+@media (min-width: 576px) {
+    .product .edit-btn {
+        width: 58px;
+        margin-left: auto;
+    }
 }

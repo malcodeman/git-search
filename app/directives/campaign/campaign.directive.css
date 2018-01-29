@@ -1,7 +1,9 @@
 .product {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid #dee3e8;
+    padding: 8px 0;
 }
 
 @media (min-width: 767px) {

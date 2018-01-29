@@ -6,50 +6,20 @@
     color: #fffefe;
 }
 
-/* Header */
-
-.header {
-    border-bottom: 1px solid #dfe3e8;
-    display: flex;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-}
-
-.company-logo {
-    height: 48px;
-    width: 48px;
-    margin: 0 1rem;
-    display: none;
-}
-
-@media (min-width: 767px) {
-    .company-logo {
-        display: block;
-    }
-}
-
-.header-text-box {
-    display: flex;
-    flex-direction: column;
-}
-
-.header-text-box .company-name {
-    color: #202b36;
-    font-size: 14px;
-}
-
-.header-text-box p {
-    color: #202b36;
-    font-size: 28.0px;
-}
-
 /* Main */
 
 section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
+}
+
+@media (min-width: 767px) {
+    section {
+        padding: 2rem 1rem;
+    }
 }
 
 .products-container {
-    padding: 2rem 2rem;
+    box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
+    border-radius: 4px;
+    border: 1px solid #dee3e8;
 }
