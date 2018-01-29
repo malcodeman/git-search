@@ -1,18 +1,24 @@
 {
-    "campaigns": [{
+    "products": [{
             "image": "../../assets/products/playstation4.png",
             "name": "Playstation 4 Game Console",
-            "info": "234 orders, 14 days of campaign left"
+            "creation_date": "14",
+            "orders": "234",
+            "stock": "12"
         },
         {
             "image": "../../assets/products/playstation2.png",
             "name": "Playstation 2",
-            "info": "167 orders, 9 days of campaign left"
+            "creation_date": "9",
+            "orders": "167",            
+            "stock": "129"
         },
         {
             "image": "../assets/products/playstation_portable.png",
             "name": "Playstation 4 Portable",
-            "info": "131 orders, 11 days of campaign left"
+            "creation_date": "11",
+            "orders": "131",            
+            "stock": "43"
         }
     ]
 }
