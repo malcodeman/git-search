@@ -10,6 +10,10 @@ angular.module("shiffAdmin").controller("productsController", ["$scope", "header
             $scope.products = res;            
         });
     }
+    $scope.notification = {
+        "text": "Playstation 4 Game Console listing was successfully created.",
+        "class": "green"
+    }
     getHeaderInfo("products");
     getAllProducts();
 }])

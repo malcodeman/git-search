@@ -85,7 +85,7 @@ a {
   background-image: url("assets/icons/menu-reports-icon.png");
 }
 
-.app-menu .notification {
+.app-menu .item .app-notification {
   margin-left: auto;
   background-color: #4c89fe;
   border-radius: 12px;
@@ -97,12 +97,12 @@ a {
 }
 
 @media (min-width: 991px) {
-  .app-menu .notification {
+  .app-menu .item .app-notification {
     display: flex
   }
 }
 
-.app-menu .notification .counter {
+.app-menu .item .app-notification .counter {
   font-size: 11px;
   color: #fff;
 }

@@ -10,6 +10,9 @@ angular.module("shiffAdmin").controller("campaignsController", ["$scope", "heade
             $scope.campaigns = res;            
         });
     }
+    $scope.notification = {
+        "text": "Playstation 4 campaign has overperformed your target goals. Let us know what you think."
+    }
     getHeaderInfo("campaigns");
     getAllCampaigns();
 }])

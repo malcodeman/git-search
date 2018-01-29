@@ -1,0 +1,43 @@
+.notification {
+    height: 64px;
+    border-top: 3px solid #909dab;
+    background-color: #F4F5F7;
+    box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.notification p {
+    color: #212a35;
+    font-size: 14px;
+}
+
+.notification .icon {
+    display: block;
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.notification .icon-bell {
+    background-image: url("../../assets/icons/notification/bell-icon.svg");
+    margin-right: 1rem;
+}
+
+.notification .icon-close {
+    background-image: url("../../assets/icons/notification/close-icon.svg");
+    margin-left: auto;
+}
+
+.green {
+    background-color: #c6ebea;
+    border-color: #47C1BF;
+}
+
+.green .icon-bell {
+    background-image: url("../../assets/icons/notification/check-icon.svg");    
+}
