@@ -60,7 +60,7 @@ a {
 }
 
 @media (min-width: 991px) {
-  .app-app-menu .icon {
+  .app-menu .icon {
     margin-right: 1rem;
   }
 }

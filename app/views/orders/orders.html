@@ -1,2 +1,50 @@
 <link rel="stylesheet" href="views/orders/orders.css" />
 <header-directive header="page"></header-directive>
+<main class="main">
+    <div class="orders-container">
+        <section>
+            <div class="tabs-box">
+                <span class="tab active">All Orders</span>
+                <span class="tab">Open</span>
+                <span class="tab">Fullfilled</span>
+                <span class="tab">Failed</span>
+            </div>
+            <div class="input-box">
+                <select class="input input-select">
+                    <option value="Filter orders">Filter orders</option>
+                </select>
+                <input type="search" class="input input-search" placeholder="Start typing to search…" />
+            </div>
+            <table class="table">
+                <thead>
+                    <th>Order</th>
+                    <th>Date</th>
+                    <th>Customer</th>
+                    <th>Payment status</th>
+                    <th>Campaign status</th>
+                    <th>Total</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="order in orders">
+                        <td>
+                            <a href="#">#{{order.id}}</a>
+                        </td>
+                        <td>{{order.date}}</td>
+                        <td>{{order.customer}}</td>
+                        <td>
+                            <span class="{{order.payment_status.class}}">{{order.payment_status.text}}</span>
+                        </td>
+                        <td>
+                            <span class="{{order.campaign_status.class}}">{{order.campaign_status.text}}</span>
+                        </td>
+                        <td>${{order.total}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pagination-box">
+                <button class="icon left-icon"></button>
+                <button class="icon right-icon"></button>
+            </div>
+        </section>
+    </div>
+</main>

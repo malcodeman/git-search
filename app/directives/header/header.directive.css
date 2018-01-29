@@ -4,6 +4,7 @@ header-directive {
     border-bottom: 1px solid #dfe3e8;
     display: flex;
     padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .company-logo {

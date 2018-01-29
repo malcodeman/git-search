@@ -5,3 +5,142 @@
 .item .menu-orders {
     color: #fffefe;
 }
+
+section {
+    border: 1px solid #dee3e8;
+    border-radius: 4px;
+    box-shadow: 0px 1px 11px rgba(22, 28, 37, 0.05);
+}
+
+.orders-container {
+    padding: 0 1rem;
+}
+
+.tabs-box {
+    border-bottom: 1px solid #c3ccd5;
+    padding: 1rem 1rem;
+}
+
+.tabs-box .tab {
+    margin-right: 1rem;
+    color: #202b36;
+    font-size: 14.0px;
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+
+.tabs-box .active {
+    border-bottom: 3px solid #4c89fe;
+}
+
+.input-box {
+    display: flex;
+    padding: 1rem 1rem;
+}
+
+.input-box .input {
+    border: 1px solid #c3ccd5;
+    box-shadow: 0px 1px 0px rgba(22, 28, 37, 0.05);
+    height: 36px;
+    padding: 0 8px;
+}
+
+.input-box .input-select {
+    width: 20%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.input-box .input-search {
+    width: 80%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.table thead th {
+    color: #202b36;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee3e8;
+}
+
+.table tbody td {
+    color: #202b36;
+    font-size: 14px;
+    padding: 1rem 1rem;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dee3e8;
+    padding: 0 1rem;
+}
+
+.table tbody td a {
+    color: #0079cd;
+}
+
+.table tbody td span {
+    padding: 6px 8px;
+    border-radius: 14px;
+}
+
+.paid {
+    background-color: #50B83B;
+    color: #fff;
+}
+
+.authorized,
+.unfulfilled {
+    background-color: #FFE989;
+}
+
+.failed {
+    background-color: #EB3A00;
+    color: #fff;
+}
+
+.fulfilled,
+.free {
+    background-color: #C8EDEC;
+}
+
+.pagination-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.pagination-box button {
+    width: 144px;
+    height: 36px;
+    border: 1px solid #c3ccd5;
+    box-shadow: 0px 1px 0px rgba(22, 28, 37, 0.05);
+    padding: 0;
+    cursor: pointer;
+}
+
+.pagination-box .icon {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pagination-box .left-icon {
+    background-image: url("../../assets/icons/pagination/arrow-left-icon.svg");
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.pagination-box .right-icon {
+    background-image: url("../../assets/icons/pagination/arrow-right-icon.svg");
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
