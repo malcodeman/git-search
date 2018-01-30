@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="directives/report/report.directive.css" />
+<div class="report-card">
+    <p>
+        <strong>{{report.title}}</strong>
+    </p>
+    <p>{{report.description}}</p>
+    <p>
+        <strong>{{report.last_30_days}} LAST 30 DAYS</strong>
+    </p>
+    <div class="graph-box">
+        <span class="number">
+            <string>{{report.main_numeric}}</string>
+        </span>
+    </div>
+    <div class="report-items">
+        <div class="report-item">
+            <a href="#">{{report.report_items[0].description}}</a>
+            <span>{{report.report_items[0].value}}</span>
+        </div>
+        <div class="report-item">
+            <a href="#">{{report.report_items[1].description}}</a>
+            <span>{{report.report_items[1].value}}</span>
+        </div>
+    </div>
+    <div class="show-all-box">
+        <a href="#">Show all</a>
+        <i class="chevron-down-icon"></i>
+    </div>
+</div>

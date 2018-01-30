@@ -1,0 +1,63 @@
+{
+    "reports": [{
+            "title": "Customers",
+            "description": "Gain insights into who your customers are and how they interact with your products.",
+            "last_30_days": "customers",
+            "main_numeric": "234",
+            "report_items": [{
+                    "description": "New customers over time",
+                    "value": "197 customers"
+                },
+                {
+                    "description": "Top performing customers",
+                    "value": "23 customers"
+                }
+            ]
+        },
+        {
+            "title": "Engagement",
+            "description": "Know what actions influencers are performing and measure the success of your campaigns.",
+            "last_30_days": "impressions",
+            "main_numeric": "66,236",
+            "report_items": [{
+                    "description": "Likes",
+                    "value": "43,072 unique"
+                },
+                {
+                    "description": "Comments",
+                    "value": "13,124 unique"
+                }
+            ]
+        },
+        {
+            "title": "Sales",
+            "description": "Gauge the success of your campaigns by comparing sales through time and across products.",
+            "last_30_days": "sales",
+            "main_numeric": "$66,904.39",
+            "report_items": [{
+                    "description": "Sales over time",
+                    "value": "234 orders"
+                },
+                {
+                    "description": "Sales by product",
+                    "value": "104 products"
+                }
+            ]
+        },
+        {
+            "title": "Behavior",
+            "description": "Gauge the success of your campaigns by comparing sales through time and across products.",
+            "last_30_days": "reached target goals",
+            "main_numeric": "83%",
+            "report_items": [{
+                    "description": "Succesfully followed post guidelines",
+                    "value": "92%"
+                },
+                {
+                    "description": "Accomplished target goals",
+                    "value": "76%"
+                }
+            ]
+        }
+    ]
+}

@@ -5,3 +5,25 @@
 .item .menu-reports {
     color: #fffefe;
 }
+
+section {
+    padding: 2rem 0;
+}
+
+@media (min-width: 767px) {
+    section {
+        padding: 2rem 1rem;
+    }
+}
+
+.reports-container {
+    display: grid;
+    grid-template: auto / 1fr;
+    grid-gap: 2rem;
+}
+
+@media (min-width: 767px) {
+    .reports-container {
+        grid-template: auto / repeat(2, 1fr);
+    }
+}

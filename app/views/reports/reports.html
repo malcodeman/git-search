@@ -1,2 +1,9 @@
 <link rel="stylesheet" href="views/reports/reports.css" />
-<header-directive header="page" ></header-directive>
+<header-directive header="page"></header-directive>
+<main>
+    <section>
+        <div class="reports-container">
+            <report-directive report="report" ng-repeat="report in reports"></report-directive>
+        </div>
+    </section>
+</main>
