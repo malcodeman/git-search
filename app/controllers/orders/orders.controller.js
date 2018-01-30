@@ -1,4 +1,4 @@
-angular.module("shiffAdmin").controller("ordersController", ["$scope", "headerInfo", "ordersService", function ($scope, headerInfo, ordersService) {
+angular.module("shiffAdmin").controller("ordersController", ["$scope", "headerInfo", "ordersService", "$filter", function ($scope, headerInfo, ordersService, $filter) {
     let getHeaderInfo = (page) => {
         headerInfo.getHeaderInfo(page).then((res) => {
             $scope.page = res;
@@ -12,4 +12,14 @@ angular.module("shiffAdmin").controller("ordersController", ["$scope", "headerIn
         })
     }
     getAllOrders();
-}])
+    $scope.currentPage = 0;
+    $scope.pageSize = 10;
+    $scope.q = '';
+}]);
+
+angular.module("shiffAdmin").filter('startFrom', function () {
+    return function (input, start) {
+        start = +start;
+        return input.slice(start);
+    }
+});

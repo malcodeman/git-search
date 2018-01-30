@@ -137,6 +137,12 @@ section {
     box-shadow: 0px 1px 0px rgba(22, 28, 37, 0.05);
     padding: 0;
     cursor: pointer;
+    background-color: #fff;
+}
+
+.pagination-box button:disabled {
+    background-color: #f9fafa;
+
 }
 
 @media (min-width: 576px) {
