@@ -1,6 +1,7 @@
 (() => {
     'use strict';
-    angular.module("shiffAdmin").controller("reportsController", ["$scope", "headerInfo", "reportsService", function ($scope, headerInfo, reportsService) {
+    angular.module("shiffAdmin").controller("reportsController", ["$scope", "headerInfo", "reportsService", reportsController])
+    function reportsController($scope, headerInfo, reportsService) {
         let getHeaderInfo = (page) => {
             headerInfo.getHeaderInfo(page).then((res) => {
                 $scope.page = res;
@@ -13,5 +14,5 @@
         }
         getHeaderInfo("reports");
         getAllReports();
-    }]);
+    }
 })();

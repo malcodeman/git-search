@@ -1,6 +1,7 @@
 (() => {
     'use strict';
-    angular.module("shiffAdmin").controller("productsController", ["$scope", "headerInfo", "productsService", function ($scope, headerInfo, productsService) {
+    angular.module("shiffAdmin").controller("productsController", ["$scope", "headerInfo", "productsService", productsController])
+    function productsController($scope, headerInfo, productsService) {
         let getHeaderInfo = (page) => {
             headerInfo.getHeaderInfo(page).then((res) => {
                 $scope.page = res;
@@ -17,5 +18,5 @@
         }
         getHeaderInfo("products");
         getAllProducts();
-    }]);
+    }
 })();

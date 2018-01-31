@@ -216,3 +216,17 @@ label {
         margin-bottom: 1rem;
     }
 }
+
+.submit-btn {
+    background-color: #ffaa01;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #192028;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0 1rem;
+    width: 100%;
+    border: 0;
+}
