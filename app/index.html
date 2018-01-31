@@ -73,19 +73,21 @@
     </main>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 
   <script src="app.js"></script>
 
-  <!-- Views -->
+  <!-- Modules -->
 
-  <script src="views/home/home.js"></script>
-  <script src="views/campaigns/campaigns.js"></script>
-  <script src="views/products/products.js"></script>
-  <script src="views/orders/orders.js"></script>
-  <script src="views/reports/reports.js"></script>
-  <script src="views/new-campaign/new-campaign.js"></script>
+  <script src="modules/app.modules.js"></script>
+  <script src="modules/home/home.js"></script>
+  <script src="modules/campaigns/campaigns.js"></script>
+  <script src="modules/products/products.js"></script>
+  <script src="modules/orders/orders.js"></script>
+  <script src="modules/reports/reports.js"></script>
+  <script src="modules/new-campaign/new-campaign.js"></script>
+
 
   <!-- Directives -->
 
@@ -98,15 +100,18 @@
 
   <!-- Controllers -->
 
-  <script src="controllers/reports/reports.controller.js"></script>
-  <script src="controllers/orders/orders.controller.js"></script>
-  <script src="controllers/campaigns/campaigns.controller.js"></script>
-  <script src="controllers/products/products.controller.js"></script>
-  <script src="controllers/home/home.controller.js"></script>
-  <script src="controllers/new-campaign/new-campaign.controller.js"></script>
-  <script src="controllers/notification/notification.controller.js"></script>
-  <script src="controllers/report/report.controller.js"></script>
+  <script src="modules/home/home.controller.js"></script>
+  <script src="modules/campaigns/campaigns.controller.js"></script>
+  <script src="modules/products/products.controller.js"></script>
+  <script src="modules/orders/orders.controller.js"></script>
+  <script src="modules/new-campaign/new-campaign.controller.js"></script>
+  <script src="modules/reports/reports.controller.js"></script>
   
+
+
+  <script src="controllers/report/report.controller.js"></script>
+  <script src="controllers/notification/notification.controller.js"></script>
+
 
   <!-- Services -->
 
