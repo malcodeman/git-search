@@ -4,6 +4,7 @@ angular.module("shiffAdmin").directive("reportDirective", function () {
       scope: {
         report: '='
       },
-      templateUrl: 'directives/report/report.directive.html'
+      templateUrl: 'directives/report/report.directive.html',
+      controller: 'reportController'
     };
   });

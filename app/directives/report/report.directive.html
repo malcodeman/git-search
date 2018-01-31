@@ -13,17 +13,14 @@
         </span>
     </div>
     <div class="report-items">
-        <div class="report-item">
-            <a href="#">{{report.report_items[0].description}}</a>
-            <span>{{report.report_items[0].value}}</span>
-        </div>
-        <div class="report-item">
-            <a href="#">{{report.report_items[1].description}}</a>
-            <span>{{report.report_items[1].value}}</span>
+        <div ng-repeat="item in report.report_items | limitTo: limit " class="report-item">
+            <a href="#">{{item.description}}</a>
+            <span>{{item.value}}</span>
         </div>
     </div>
-    <div class="show-all-box">
-        <a href="#">Show all</a>
-        <i class="chevron-down-icon"></i>
+    <div ng-hide="limit === report.report_items.length" ng-click="limit = report.report_items.length" ng-show="{{report.report_items.length > 2}}"
+        class="show-all-box">
+        <a>Show all</a>
+        <i class="chevron-icon  chevron-down-icon"></i>
     </div>
 </div>

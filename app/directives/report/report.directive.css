@@ -48,7 +48,7 @@
     padding: 1rem 0;
 }
 
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
     .report-item {
         flex-direction: row;
         justify-content: space-between;
@@ -64,12 +64,15 @@
     justify-content: center;
 }
 
-.chevron-down-icon {
+.chevron-icon {
     display: block;
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../../assets/icons/chevron-down-icon.svg");
     margin-left: .5rem;
+}
+
+.chevron-down-icon {
+    background-image: url("../../assets/icons/chevron-down-icon.svg");
 }

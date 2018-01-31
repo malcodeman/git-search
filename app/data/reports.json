@@ -11,6 +11,10 @@
                 {
                     "description": "Top performing customers",
                     "value": "23 customers"
+                },
+                {
+                    "description": "Worst performing customers",
+                    "value": "15 customers"
                 }
             ]
         },
@@ -41,6 +45,10 @@
                 {
                     "description": "Sales by product",
                     "value": "104 products"
+                },
+                {
+                    "description": "Sales by campaign",
+                    "value": "23 products"
                 }
             ]
         },
@@ -55,6 +63,26 @@
                 },
                 {
                     "description": "Accomplished target goals",
+                    "value": "76%"
+                },
+                {
+                    "description": "3",
+                    "value": "3"
+                },
+                {
+                    "description": "4",
+                    "value": "76%"
+                },
+                {
+                    "description": "5",
+                    "value": "76%"
+                },
+                {
+                    "description": "6",
+                    "value": "76%"
+                },
+                {
+                    "description": "7",
                     "value": "76%"
                 }
             ]
