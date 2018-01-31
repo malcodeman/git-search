@@ -27,7 +27,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="order in orders | filter:q | startFrom:currentPage*pageSize | limitTo:pageSize">
+                    <tr ng-repeat="order in orders | filter:query | startFrom:currentPage*pageSize | limitTo:pageSize">
                         <td data-label="Order">
                             <a href="#">#{{order.id}}</a>
                         </td>
