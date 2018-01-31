@@ -14,7 +14,7 @@ angular.module("shiffAdmin").controller("ordersController", ["$scope", "headerIn
     getAllOrders();
     $scope.currentPage = 0;
     $scope.pageSize = 10;
-    $scope.q = '';
+    $scope.query = '';
 }]);
 
 angular.module("shiffAdmin").filter('startFrom', function () {

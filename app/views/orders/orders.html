@@ -4,10 +4,10 @@
     <section>
         <div class="orders-container">
             <div class="tabs-box">
-                <span class="tab active">All Orders</span>
-                <span class="tab">Open</span>
-                <span class="tab">Fullfilled</span>
-                <span class="tab">Failed</span>
+                <span ng-click="query=''" class="tab">All Orders</span>
+                <span ng-click="query='Free Product'" class="tab">Free Product</span>
+                <span ng-click="query='Unfulfilled'" class="tab">Unfulfilled</span>
+                <span ng-click="query='Failed'" class="tab">Failed</span>
             </div>
             <div class="input-box">
                 <select class="input input-select">
