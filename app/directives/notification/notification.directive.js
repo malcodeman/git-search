@@ -1,4 +1,6 @@
-angular.module("shiffAdmin").directive("notificationDirective", function () {
+(() => {
+  'use strict';
+  angular.module("shiffAdmin").directive("notificationDirective", () => {
     return {
       restrict: 'E',
       scope: {
@@ -8,3 +10,4 @@ angular.module("shiffAdmin").directive("notificationDirective", function () {
       controller: 'notificationController'
     };
   });
+})();

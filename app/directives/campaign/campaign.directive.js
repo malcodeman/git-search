@@ -1,4 +1,6 @@
-angular.module("shiffAdmin").directive("campaignDirective", function () {
+(() => {
+  'use strict';
+  angular.module("shiffAdmin").directive("campaignDirective", () => {
     return {
       restrict: 'E',
       scope: {
@@ -7,3 +9,4 @@ angular.module("shiffAdmin").directive("campaignDirective", function () {
       templateUrl: 'directives/campaign/campaign.directive.html'
     };
   });
+})();

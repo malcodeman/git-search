@@ -1,4 +1,6 @@
-angular.module("shiffAdmin").directive("reportDirective", function () {
+(() => {
+  'use strict';
+  angular.module("shiffAdmin").directive("reportDirective", () => {
     return {
       restrict: 'E',
       scope: {
@@ -8,3 +10,4 @@ angular.module("shiffAdmin").directive("reportDirective", function () {
       controller: 'reportController'
     };
   });
+})();

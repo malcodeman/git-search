@@ -1,4 +1,6 @@
-angular.module("shiffAdmin").directive("headerDirective", function () {
+(() => {
+  'use strict';
+  angular.module("shiffAdmin").directive("headerDirective", () => {
     return {
       restrict: 'E',
       scope: {
@@ -7,3 +9,4 @@ angular.module("shiffAdmin").directive("headerDirective", function () {
       templateUrl: 'directives/header/header.directive.html'
     };
   });
+})();

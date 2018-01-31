@@ -1,4 +1,6 @@
-angular.module("shiffAdmin").directive("productDirective", function () {
+(() => {
+  'use strict';
+  angular.module("shiffAdmin").directive("productDirective", () => {
     return {
       restrict: 'E',
       scope: {
@@ -7,3 +9,4 @@ angular.module("shiffAdmin").directive("productDirective", function () {
       templateUrl: 'directives/product/product.directive.html'
     };
   });
+})();
