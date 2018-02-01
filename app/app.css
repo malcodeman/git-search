@@ -13,6 +13,10 @@ p {
   margin: 0;
 }
 
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+
 a {
   text-decoration: none;
 }

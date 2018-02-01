@@ -50,8 +50,8 @@
                 "class": "authorized"
             },
             "campaign_status": {
-                "text": "Unfulfilled",
-                "class": "unfulfilled"
+                "text": "Fulfilled",
+                "class": "fulfilled"
             },
             "total": "383.57"
         },
@@ -120,8 +120,8 @@
                 "class": "authorized"
             },
             "campaign_status": {
-                "text": "Unfulfilled",
-                "class": "unfulfilled"
+                "text": "Fulfilled",
+                "class": "fulfilled"
             },
             "total": "383.57"
         },
@@ -173,8 +173,8 @@
                 "class": "authorized"
             },
             "campaign_status": {
-                "text": "Unfulfilled",
-                "class": "unfulfilled"
+                "text": "Fulfilled",
+                "class": "fulfilled"
             },
             "total": "383.57"
         }, {
@@ -277,8 +277,8 @@
                 "class": "authorized"
             },
             "campaign_status": {
-                "text": "Unfulfilled",
-                "class": "unfulfilled"
+                "text": "Fulfilled",
+                "class": "fulfilled"
             },
             "total": "383.57"
         }, {

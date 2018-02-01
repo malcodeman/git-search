@@ -4,10 +4,10 @@
     <section>
         <div class="orders-container">
             <div class="tabs-box">
-                <span ng-click="query=''" class="tab">All Orders</span>
-                <span ng-click="query='Free Product'" class="tab">Free Product</span>
-                <span ng-click="query='Unfulfilled'" class="tab">Unfulfilled</span>
-                <span ng-click="query='Failed'" class="tab">Failed</span>
+                <span ng-click="query='' ; currentPage = 0" class="tab">All Orders</span>
+                <span ng-click="query='Free Product' ; currentPage = 0" class="tab">Free Product</span>
+                <span ng-click="query='Unfulfilled' ; currentPage = 0" class="tab">Unfulfilled</span>
+                <span ng-click="query='Failed' ; currentPage = 0" class="tab">Failed</span>
             </div>
             <div class="input-box">
                 <select class="input input-select">
@@ -44,8 +44,8 @@
                 </tbody>
             </table>
             <div class="pagination-box">
-                <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1" class="icon left-icon"></button>
-                <button ng-disabled="currentPage >= orders.length/pageSize - 1" ng-click="currentPage=currentPage+1" class="icon right-icon"></button>
+                <button ng-disabled="(currentPage == 0 || (orders | filter:query).length < 10)" ng-click="currentPage=currentPage-1" class="icon left-icon"></button>
+                <button ng-disabled="(currentPage >= orders.length/pageSize - 1 || (orders | filter:query).length < 10)" ng-click="currentPage=currentPage+1" class="icon right-icon"></button>
             </div>
         </div>
     </section>

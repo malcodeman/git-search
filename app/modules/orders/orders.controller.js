@@ -12,6 +12,7 @@
         let getAllOrders = () => {
             ordersService.getOrders().then((res) => {
                 $scope.orders = res;
+                $scope.totalItems = $scope.orders.length;
                 $scope.pageSize = 10;
                 $scope.currentPage = 0;
                 $scope.query = "";
