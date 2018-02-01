@@ -32,3 +32,8 @@ header-directive {
 .header-text-box p:nth-child(2) {
     font-size: 28.0px;
 }
+
+.header-btn {
+    margin-left: auto;
+    margin-right: 1rem;
+}

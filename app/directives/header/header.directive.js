@@ -6,7 +6,8 @@
       scope: {
         header: '='
       },
-      templateUrl: 'directives/header/header.directive.html'
+      templateUrl: 'directives/header/header.directive.html',
+      transclude: true,
     };
   });
 })();
