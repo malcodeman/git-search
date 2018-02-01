@@ -19,5 +19,6 @@
             });
         }
         getAllOrders();
+        document.getElementsByClassName("tab")[0].focus();
     }
 })();

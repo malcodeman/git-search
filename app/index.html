@@ -48,13 +48,6 @@
           </a>
         </div>
       </nav>
-      <div class="brands-box">
-        <div class="item">
-          <a href="#">
-            <span>Playstation</span>
-          </a>
-        </div>
-      </div>
     </aside>
     <main class="app-main">
       <header class="app-header">
@@ -62,7 +55,7 @@
           <input class="search" type="search" placeholder="Search" />
         </div>
         <div class="user-box" ng-controller="userController">
-          <img class="avatar" src="assets/avatar.jpg" />
+          <img class="avatar" ng-cloak ng-src="{{::user.avatar}}" />
           <div class="user">
             <span class="name" ng-cloak>{{::user.name}}</span>
             <span class="company" ng-cloak>{{::user.company}}</span>
@@ -72,6 +65,7 @@
       <div ng-view class="app-content-container"></div>
     </main>
   </div>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
@@ -109,7 +103,6 @@
   <script src="controllers/report/report.controller.js"></script>
   <script src="controllers/notification/notification.controller.js"></script>
   <script src="controllers/user/user.controller.js"></script>
-
 
   <!-- Services -->
 
