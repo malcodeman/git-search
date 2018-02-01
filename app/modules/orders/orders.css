@@ -54,6 +54,7 @@ section {
 @media (min-width: 576px) {
     .tabs-box .tab {
         margin-right: 1rem;
+        padding-bottom: 0;
     }
 }
 
@@ -86,6 +87,7 @@ section {
 
 .input-box .input-search {
     border-radius: 4px;
+    text-indent: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -127,7 +129,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .pagination-box button {
@@ -179,6 +181,11 @@ table {
 
 table tbody td a {
     color: #0079cd;
+}
+
+table tbody td .status {
+    padding: 4px 6px;
+    border-radius: 10px;
 }
 
 table tr {

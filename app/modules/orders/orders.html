@@ -34,10 +34,10 @@
                         <td data-label="Date">{{order.date}}</td>
                         <td data-label="Customer">{{order.customer}}</td>
                         <td data-label="Payment Status">
-                            <span class="{{order.payment_status.class}}">{{order.payment_status.text}}</span>
+                            <span class="{{order.payment_status.class}} status">{{order.payment_status.text}}</span>
                         </td>
                         <td data-label="Campaign Status">
-                            <span class="{{order.campaign_status.class}}">{{order.campaign_status.text}}</span>
+                            <span class="{{order.campaign_status.class}} status">{{order.campaign_status.text}}</span>
                         </td>
                         <td data-label="Total">${{order.total}}</td>
                     </tr>

@@ -3,7 +3,14 @@
 header-directive {
     border-bottom: 1px solid #dfe3e8;
     display: flex;
+    flex-direction: column;
     padding-bottom: 2rem;
+}
+
+@media (min-width: 767px) {
+    header-directive {
+        flex-direction: row;
+    }
 }
 
 .company-logo {
@@ -33,7 +40,9 @@ header-directive {
     font-size: 28.0px;
 }
 
-.header-btn {
-    margin-left: auto;
-    margin-right: 1rem;
+@media (min-width: 767px) {
+    .header-btn {
+        margin-right: 1rem;
+        margin-left: auto;
+    }
 }
