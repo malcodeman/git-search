@@ -62,6 +62,7 @@
 .show-all-box {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .chevron-icon {

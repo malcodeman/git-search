@@ -2,6 +2,7 @@
 <header-directive header="page"></header-directive>
 <main class="main">
     <section>
+
         <div class="orders-container">
             <div class="tabs-box">
                 <span ng-click="query='' ; currentPage = 0" class="tab">All Orders</span>
@@ -11,9 +12,9 @@
             </div>
             <div class="input-box">
                 <select class="input input-select">
-                    <option value="Filter orders">Filter orders</option>
+                    <option ng-click="query=''" value="Filter Orders">Filter Orders</option>
                 </select>
-                <input type="search" class="input input-search" placeholder="Start typing to search…" />
+                <input ng-model="query" type="search" class="input input-search" placeholder="Start typing to search…" />
             </div>
             <table>
                 <thead>
@@ -45,7 +46,8 @@
             </table>
             <div class="pagination-box">
                 <button ng-disabled="(currentPage == 0 || (orders | filter:query).length < 10)" ng-click="currentPage=currentPage-1" class="icon left-icon"></button>
-                <button ng-disabled="(currentPage >= orders.length/pageSize - 1 || (orders | filter:query).length < 10)" ng-click="currentPage=currentPage+1" class="icon right-icon"></button>
+                <button ng-disabled="(currentPage >= orders.length/pageSize - 1 || (orders | filter:query).length < 10)" ng-click="currentPage=currentPage+1"
+                    class="icon right-icon"></button>
             </div>
         </div>
     </section>
