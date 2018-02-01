@@ -2,8 +2,8 @@
 <div class="product">
     <img class="product-img" ng-src="{{product.image}}" />
     <div class="product-box">
-        <p class="product-name">{{product.name}}</p>
-        <p>{{product.stock}} in stock, {{product.creation_date}} days of campaign left</p>
+        <p class="product-name">{{::product.name}}</p>
+        <p>{{::product.stock}} in stock, {{::product.creation_date}} days of campaign left</p>
     </div>
     <a class="edit-btn">Edit</a>
 </div>

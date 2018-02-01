@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="directives/campaign/campaign.directive.css" />
 <div class="product">
     <div class="product-box">
-        <img class="product-img" ng-src="{{campaign.image}}" />
-        <p class="product-name">{{campaign.name}}</p>
+        <img class="product-img" ng-src="{{::campaign.image}}" />
+        <p class="product-name">{{::campaign.name}}</p>
     </div>
-    <p class="product-info">{{campaign.orders}} orders, {{campaign.creation_date}} days of campaign left</p>
+    <p class="product-info">{{::campaign.orders}} orders, {{::campaign.creation_date}} days of campaign left</p>
 </div>
