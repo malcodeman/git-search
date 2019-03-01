@@ -5,18 +5,18 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { UserComponent } from "./user/user.component";
-import { SearchComponent } from "./search/search.component";
 import { HomeComponent } from "./home/home.component";
 import { LogoComponent } from "./logo/logo.component";
 import { GithubService } from "./github.service";
+import { HomeSearchComponent } from "./home/home-search/home-search.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    SearchComponent,
     HomeComponent,
-    LogoComponent
+    LogoComponent,
+    HomeSearchComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [GithubService],

@@ -1,7 +1,17 @@
 <div class="container">
   <header class="header">
     <app-logo></app-logo>
-    <app-search></app-search>
+    <div class="search">
+      <span class="base-url">github.com/</span>
+      <input
+        class="input"
+        type="text"
+        placeholder="username"
+        value="{{ username }}"
+        (input)="handleOnChange($event)"
+      />
+      <button class="cta-btn" (click)="handleClick()">Search</button>
+    </div>
   </header>
   <main class="grid">
     <aside class="user-profile">

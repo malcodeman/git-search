@@ -1,0 +1,11 @@
+<div class="search">
+  <span class="base-url">github.com/</span>
+  <input
+    class="input"
+    type="text"
+    placeholder="username"
+    value="{{ username }}"
+    (input)="handleOnChange($event)"
+  />
+  <a class="cta-btn" routerLink="/{{ username }}">Search</a>
+</div>
