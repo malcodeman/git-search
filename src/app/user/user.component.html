@@ -4,7 +4,20 @@
     <app-search></app-search>
   </header>
   <main class="grid">
-    <aside class="user-profile">profile</aside>
+    <aside class="user-profile">
+      <div *ngIf="user">
+        <div class="about">
+          <img class="avatar" src="{{ user.avatar_url }}" alt="avatar" />
+          <div class="column">
+            <span class="name">{{ user.name }}</span>
+            <a href="{{ user.blog }}" class="website">{{ user.blog }}</a>
+          </div>
+        </div>
+        <div class="stats">stats</div>
+        <div class="langs">langs</div>
+        <div class="dates">dates</div>
+      </div>
+    </aside>
     <section class="user-activities">latest activity</section>
   </main>
 </div>

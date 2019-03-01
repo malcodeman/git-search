@@ -11,13 +11,42 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 24% 1fr;
+  grid-template-columns: 28% 1fr;
   grid-gap: 24px;
   padding: 24px 0;
 }
 
 .user-profile {
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.about {
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  margin-right: 16px;
+  object-fit: cover;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 0.8rem;
+}
+
+.website {
+  font-size: 0.8rem;
+  color: #0366d6;
 }
 
 .user-activities {
