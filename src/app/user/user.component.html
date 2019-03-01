@@ -9,8 +9,9 @@
         placeholder="username"
         value="{{ username }}"
         (input)="handleOnChange($event)"
+        (keyup.enter)="handleOnClick()"
       />
-      <button class="cta-btn" (click)="handleClick()">Search</button>
+      <button class="cta-btn" (click)="handleOnClick()">Search</button>
     </div>
   </header>
   <main class="grid">
@@ -20,7 +21,13 @@
           <img class="avatar" src="{{ user.avatar_url }}" alt="avatar" />
           <div class="column">
             <span class="name">{{ user.name }}</span>
-            <a href="{{ user.blog }}" class="website">{{ user.blog }}</a>
+            <a
+              href="{{ user.blog }}"
+              target="_blank"
+              rel="noopener"
+              class="website"
+              >{{ user.blog }}</a
+            >
           </div>
         </div>
         <div class="stats">

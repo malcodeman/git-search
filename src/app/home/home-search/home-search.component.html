@@ -6,6 +6,7 @@
     placeholder="username"
     value="{{ username }}"
     (input)="handleOnChange($event)"
+    (keyup.enter)="handleOnClick()"
   />
   <a class="cta-btn" routerLink="/{{ username }}">Search</a>
 </div>

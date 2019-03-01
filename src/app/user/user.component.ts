@@ -23,10 +23,10 @@ export class UserComponent implements OnInit {
     this.username = e.target.value;
   }
 
-  handleClick() {
+  handleOnClick() {
     if (this.username !== "") {
       this.getUser(this.username);
-      this.navigate(`/${this.username}`);
+      this.navigate(this.username);
     }
   }
 
