@@ -1,0 +1,25 @@
+.container {
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 24% 1fr;
+  grid-gap: 24px;
+  padding: 24px 0;
+}
+
+.user-profile {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-activities {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
