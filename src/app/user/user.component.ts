@@ -24,7 +24,10 @@ export class UserComponent implements OnInit {
   }
 
   handleOnClick() {
-    if (this.username !== "") {
+    if (
+      this.username !== "" &&
+      this.username.toLocaleLowerCase() !== this.user.login.toLocaleLowerCase()
+    ) {
       this.getUser(this.username);
       this.navigate(this.username);
     }
