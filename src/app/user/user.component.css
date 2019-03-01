@@ -63,6 +63,7 @@
 
 .user-profile {
   border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.8rem;
 }
 
 .about {
@@ -92,6 +93,48 @@
 .website {
   font-size: 0.8rem;
   color: #0366d6;
+}
+
+.stats {
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.stats-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.stats-item:last-child {
+  margin-bottom: 0;
+}
+
+.stat-name {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.langs {
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dates {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dates-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.dates-item:last-child {
+  margin-bottom: 0;
 }
 
 .user-activities {

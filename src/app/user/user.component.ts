@@ -34,6 +34,12 @@ export class UserComponent implements OnInit {
     this.router.navigateByUrl(url);
   }
 
+  formatDate(date: Date) {
+    const options = { month: "long", day: "numeric", year: "numeric" };
+
+    return new Date(date).toLocaleDateString("en-US", options);
+  }
+
   getUser(username: string) {
     return this.githubService.getUser(username).subscribe(data => {
       this.user = data;
