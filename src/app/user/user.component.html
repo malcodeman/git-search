@@ -48,7 +48,13 @@
             ><span>{{ user.public_gists }}</span>
           </div>
         </div>
-        <div class="langs">langs</div>
+        <div class="langs" *ngIf="languages && languages.length > 0">
+          <ul class="langs-list">
+            <li *ngFor="let lang of languages" class="lang-item">
+              {{ lang }}
+            </li>
+          </ul>
+        </div>
         <div class="dates">
           <div class="dates-item">
             <span class="stat-name">Joined</span>

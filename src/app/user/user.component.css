@@ -121,6 +121,21 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.langs-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.lang-item {
+  padding: 6px;
+  color: #0366d6;
+  margin: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .dates {
   padding: 16px;
   display: flex;
