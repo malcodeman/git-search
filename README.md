@@ -1,1 +1,1 @@
-# GitSearch
+# GitStalk

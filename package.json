@@ -1,13 +1,13 @@
 {
-  "name": "git-search",
+  "name": "gitstalk",
   "version": "0.0.0",
+  "domain": "gitstalk.surge.sh",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "deploy": "npm run build && surge dist/$npm_package_name $npm_package_domain"
   },
   "private": true,
   "dependencies": {

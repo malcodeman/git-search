@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "git-search": {
+    "gitstalk": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -35,7 +35,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/git-search",
+            "outputPath": "dist/gitstalk",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,18 +75,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "git-search:build"
+            "browserTarget": "gitstalk:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "git-search:build:production"
+              "browserTarget": "gitstalk:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "git-search:build"
+            "browserTarget": "gitstalk:build"
           }
         },
         "test": {
@@ -111,5 +111,5 @@
       }
     }
   },
-  "defaultProject": "git-search"
+  "defaultProject": "gitstalk"
 }
