@@ -156,6 +156,18 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.user-activities-header {
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+  color: #404448;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
 .events-list {
   list-style-type: none;
   padding: 0;
