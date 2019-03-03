@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { GithubService } from "../github.service";
 import { User } from "../user.model";
 import { Repo } from "../repo.model";
+import { Event } from "../event.model";
 
 @Component({
   selector: "app-user",
@@ -14,6 +15,7 @@ export class UserComponent implements OnInit {
   user: User;
   username: string;
   languages: Repo[];
+  events: Event[];
 
   constructor(
     private githubService: GithubService,
@@ -32,6 +34,7 @@ export class UserComponent implements OnInit {
     ) {
       this.getUser(this.username);
       this.getRepos(this.username);
+      this.getEvents(this.username);
       this.navigate(this.username);
     }
   }
@@ -64,9 +67,16 @@ export class UserComponent implements OnInit {
     });
   }
 
+  getEvents(username: string) {
+    return this.githubService.getEvents(username).subscribe(data => {
+      this.events = data;
+    });
+  }
+
   ngOnInit() {
     this.username = this.route.snapshot.paramMap.get("username");
     this.getUser(this.username);
     this.getRepos(this.username);
+    this.getEvents(this.username);
   }
 }

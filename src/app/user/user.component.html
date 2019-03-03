@@ -67,6 +67,114 @@
         </div>
       </div>
     </aside>
-    <section class="user-activities">latest activity</section>
+    <section class="user-activities">
+      <ul class="events-list" *ngIf="events && events.length > 0">
+        <li
+          *ngFor="let event of events"
+          [ngSwitch]="event.type"
+          class="event-item"
+        >
+          <ng-container *ngSwitchCase="'IssuesEvent'">
+            <ng-container
+              *ngIf="event.payload.action === 'opened'; else closed"
+            >
+              <img src="../../assets/plus.svg" class="event-icon" alt="" />
+              <span> Opened an issue in {{ event.repo.name }} </span>
+            </ng-container>
+            <ng-template #closed
+              ><img
+                src="../../assets/trash.svg"
+                class="event-icon"
+                alt=""
+              /><span
+                >Closed an issue in {{ event.repo.name }}</span
+              ></ng-template
+            >
+          </ng-container>
+          <ng-container *ngSwitchCase="'WatchEvent'">
+            <img src="../../assets/star.svg" class="event-icon" alt="" />
+            <span *ngIf="event.payload.action === 'started'">
+              Starred a repo {{ event.repo.name }}
+            </span>
+          </ng-container>
+          <ng-container *ngSwitchCase="'IssueCommentEvent'">
+            <img src="../../assets/comment.svg" class="event-icon" alt="" />
+            <span *ngIf="event.payload.action === 'created'">
+              Created a comment on an issue in {{ event.repo.name }}
+            </span>
+          </ng-container>
+          <ng-container *ngSwitchCase="'PushEvent'">
+            <img src="../../assets/commit.svg" class="event-icon" alt="" />
+            <span>
+              Pushed {{ event.payload.size }}
+              {{ event.payload.size === 1 ? "commit" : "commits" }} to
+              {{ event.repo.name }}
+            </span>
+          </ng-container>
+          <ng-container *ngSwitchCase="'CreateEvent'">
+            <img
+              class="event-icon"
+              alt=""
+              *ngIf="event.payload.ref_type === 'repository'"
+              src="../../assets/plus.svg"
+            />
+            <img
+              class="event-icon"
+              alt=""
+              *ngIf="event.payload.ref_type === 'branch'"
+              src="../../assets/branch.svg"
+            />
+            <img
+              class="event-icon"
+              alt=""
+              *ngIf="event.payload.ref_type === 'tag'"
+              src="../../assets/tag.svg"
+            />
+            <span *ngIf="event.payload.ref_type === 'repository'">
+              Created a repository {{ event.repo.name }}
+            </span>
+            <span *ngIf="event.payload.ref_type === 'branch'">
+              Created a branch master in {{ event.repo.name }}
+            </span>
+            <span *ngIf="event.payload.ref_type === 'tag'">
+              Created a tag {{ event.repo.name }}
+            </span>
+          </ng-container>
+          <ng-container *ngSwitchCase="'PullRequestEvent'">
+            <img
+              src="../../assets/pull-request.svg"
+              class="event-icon"
+              alt=""
+            />
+            <span *ngIf="event.payload.action === 'opened'">
+              Opened a pull request in {{ event.repo.name }}
+            </span>
+            <span *ngIf="event.payload.action === 'closed'">
+              Closed a pull request in {{ event.repo.name }}
+            </span>
+          </ng-container>
+          <ng-container *ngSwitchCase="'PullRequestReviewCommentEvent'">
+            <img src="../../assets/comment.svg" class="event-icon" alt="" />
+            <span *ngIf="event.payload.action === 'created'">
+              Created a comment on their pull request in {{ event.repo.name }}
+            </span>
+          </ng-container>
+          <ng-container *ngSwitchCase="'ReleaseEvent'">
+            <img src="../../assets/package.svg" class="event-icon" alt="" />
+            <span *ngIf="event.payload.action === 'published'">
+              Published a release
+            </span>
+          </ng-container>
+          <ng-container *ngSwitchCase="'ForkEvent'">
+            <img src="../../assets/branch.svg" class="event-icon" alt="" />
+            <span>
+              Forked a repo {{ event.repo.name }} to
+              {{ event.payload.forkee.full_name }}
+            </span>
+          </ng-container>
+          <ng-container *ngSwitchDefault>{{ event.type }}</ng-container>
+        </li>
+      </ul>
+    </section>
   </main>
 </div>
