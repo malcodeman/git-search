@@ -5,6 +5,8 @@
 
 Angular project based learning app.
 
+![Screenshot](docs/images/screenshot.png)
+
 ## Usage
 
 ```
